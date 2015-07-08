@@ -1,7 +1,7 @@
 package com.thecherno.rain.graphics;
 
 public class AnimatedSprite extends Sprite {
-
+//Git hub change
 	private int frame = 0;
 	private Sprite sprite;
 	private int rate = 5;
