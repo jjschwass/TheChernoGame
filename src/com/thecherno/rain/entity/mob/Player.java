@@ -14,6 +14,7 @@ public class Player extends Mob {
 	
 	private Keyboard input;
 	private Sprite sprite;
+	private Sprite animSpriteTest;
 	private int anim;
 	private boolean walking = false; 
 	private AnimatedSprite down = new AnimatedSprite(SpriteSheet.player_down, 32, 32, 3);
@@ -24,6 +25,11 @@ public class Player extends Mob {
 	
 	private AnimatedSprite animSprite = down;
 	
+	//DEBUG FUNCTION-----------------
+	private void testAnimSprite(AnimatedSprite testSprite){
+		if (testSprite.pixels == null) System.out.println(testSprite + "pixels[] is NULL");
+	}
+	//DEBUG FUNCTION-----------------
 	Projectile p;
 	private int fireRate = 0;
 	
@@ -130,7 +136,8 @@ public class Player extends Mob {
 				}
 			}
 		}
-		sprite = test.getSprite();
+//		test = test.getSprite();
+//		testAnimSprite(down);
 		screen.renderPlayer(x - 16, y - 16, sprite);
 
 	}

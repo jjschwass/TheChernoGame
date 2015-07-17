@@ -1,7 +1,6 @@
 package com.thecherno.rain.graphics;
 
 public class AnimatedSprite extends Sprite {
-//Git hub change
 	private int frame = 0;
 	private Sprite sprite;
 	private int rate = 5;
@@ -22,8 +21,9 @@ public class AnimatedSprite extends Sprite {
 			if (frame >= length - 1) frame = 0;
 			else frame++;
 			sprite = sheet.getSprites()[frame];	// change zero back to frame
+			
 		}
-		System.out.println(sprite + ", Frame: " + frame);
+//		System.out.println(sprite.pixels + ", Frame: " + frame);
 	}
 	
 	public Sprite getSprite(){

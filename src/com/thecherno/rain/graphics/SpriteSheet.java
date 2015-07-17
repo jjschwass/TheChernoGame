@@ -79,6 +79,7 @@ public class SpriteSheet {
 	}
 	
 	public Sprite[] getSprites(){
+//		System.out.println(sprites[1].pixels);
 		return sprites;
 	}
 	
